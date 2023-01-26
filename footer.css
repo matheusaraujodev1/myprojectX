@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    color: #d9d9d9;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  footer{
+    position: BLOCK;
+    bottom: 0px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+.main-contents{
+    display: flex;
+    border: solid rgb(3, 255, 16);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+.main-contents .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .contents{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.box .contents:after{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 2px;
+    background: #00ff1e;
+    top: -10px;
+}
+.box .contents:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #000000;
+    top: -10px;
+}
+.left .contents .social{
+    margin: 20px 0 0 0;
+}
+.left .contents .social a{
+    padding: 0 2px;
+}
+.left .contents .social a span{
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.left .contents .social a span:hover{
+    background: #00ff00;
+}
+.left .contents p{
+    text-align: justify;
+}
+.centro .contents .fas{
+    font-size: 23px;
+    background: #000000;
+    width: 45px;
+    height: 45px ;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.centro .contents .fas:hover{
+    background: #04ff00;
+}
+.centro .contents .text{
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.centro .contents .phone{
+    margin: 10px 0;
+}
+.centro .contents .msg{
+    margin-top: 10px;
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 17px;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+.right form input{
+    height: 35px;
+}
+.right form input:focus,
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form .text{
+    font-size: 17px;
+    margin-bottom: 2px;
+    color: #656565;
+}
+.right form .btn{
+    margin-top: 10px;
+}
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    background: #00ff15;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.right form .btn button:hover{
+    background: rgb(0, 0, 0);
+}
+.bottom .centro{
+    padding: 5px;
+    font-size: 15px;
+    background: #151515;
+    text-align: center;
+}
+.bottom .centro span{
+    color: #656565;
+}
+.bottom .centro a{
+    color: #00ff2f;
+    text-decoration: none;
+}
+.bottom .centro a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 900px){
+    footer{  
+        bottom: 0px;
+    }
+    .main-contents{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-contents .box{
+        margin: 5px 0;
+    }
+}
